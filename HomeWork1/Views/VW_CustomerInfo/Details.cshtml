@@ -1,0 +1,42 @@
+﻿@model HomeWork1.Models.VW_CustomerInfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VW_CustomerInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.客戶名稱)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.客戶名稱)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.聯絡人數量)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.聯絡人數量)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.銀行帳戶數量)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.銀行帳戶數量)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
